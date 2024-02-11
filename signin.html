@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Triple C.">
+    <meta name="description" content="Leanrable task 'Netflix Clone'">
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/signin.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6ab2133fe6.js" crossorigin="anonymous"></script>
+    <title>Netflix Sign in</title>
+</head>
+
+<body>
+    <div class="netflix_bg">
+        <!-- Navbar -->
+        <nav class="flex justify-between py-4 px-8">
+            <div class="p-2">
+                <a href="./index.html"><img src="./assets/images/Logo.png" alt="netflixLogo" class="w-full"></a>
+            </div>
+        </nav>
+
+
+        <main class="w-4/5 lg:w-4/12 md:w-3/5 mx-auto text-[#757575] p-10 space-y-10 mt-6">
+            <h2 class="text-white text-3xl font-bold">Sign in</h2>
+            
+            <form action="./" class="space-y-5">
+                <input type="text" name="email" id="email" placeholder="Email or Phone number"
+                    class="w-full p-4 bg-neutral-600 rounded-lg">
+                <input type="password" name="password" id="Password" placeholder="Password"
+                    class="w-full p-4 bg-neutral-600 rounded-lg">
+            </form>
+
+            <div class="pt-3">
+                <a href="./signin.html"
+                    class="text-white bg-red-600 py-2 px-2 block text-center md:py-3 md:px-6 rounded-md">Sign in</a>
+
+                <div class="flex justify-between pt-2">
+                    <div>
+                        <input type="checkbox" name="check" id="checkbox" class="border-0 bg-transparent">
+                        <label for="checkbox">Remember me</label>
+                    </div>
+
+                    <a href="#" class="text-center md:text-left">Need help?</a>
+                </div>
+            </div>
+
+            <div class="space-y-4 pb-28">
+                <div class="flex gap-2 items-center">
+                    <i class="fa-brands fa-square-facebook text-3xl text-blue-700"></i>
+                    <a href="#">Login with facebook</a>
+                </div>
+
+                <div class="flex gap-2">
+                    <p>New to Netflix?</p>
+                    <a href="#" class="text-white">Sign up now</a>
+                </div>
+
+                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" class="text-[#0071EB]">Learn more.</a>  </p>
+            </div>
+        </main>
+
+        <footer class="mt-20 ">
+            <div class="container md:w-9/12 mx-auto mt-10 pt-10 pb-10 px-6 text-[#757575] space-y-8">
+                <h4 class="text-center md:text-start">Questions? Call 1-844-505-2993 </h4>
+        
+                <section class="flex flex-col space-y-6 md:space-y-0 items-center justify-start text-center md:text-start md:justify-between md:flex-row">
+                    <div class="flex flex-col space-y-3.5">
+                        <h4>FAQ</h4>
+                        <a href="#">Cookie Preferences</a>
+                    </div>
+        
+                    <div class="flex flex-col space-y-3.5">
+                        <h4>Help Center</h4>
+                        <a href="#">Corporate Information</a>
+                    </div>
+        
+                    <div class="flex flex-col space-y-3.5">
+                        <h4>Terms of Use</h4>
+                        <!-- <a href="#"></a> -->
+                    </div>
+        
+                    <div class="flex flex-col">
+                        <h4>Privacy</h4>
+                       
+                        <!-- <a href="#"></a> -->
+                    </div>
+                </section>
+        
+                <div class="flex justify-center md:justify-start">
+                    <select name="language" id="lang" class="h-fit bg-black text--[#757575] border p-0.5 text-center  md:w-1/6 md:py-2 md:ps-1 text-lg rounded-md">  
+                        <option value="">English</option>
+                        <option value="">Spanish</option>
+                        <option value="">Russian</option>
+                        <option value="">Chinese</option>
+                        <option value="">French</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

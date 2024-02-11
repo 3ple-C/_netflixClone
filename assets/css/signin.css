@@ -1,0 +1,14 @@
+main{
+    background: #000000BF;
+}
+
+div.netflix_bg {
+    background: linear-gradient(180deg, #000000bf 0%,  #000000BF 100%), url(../images/image\ 2.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    background: #000000BF;
+}

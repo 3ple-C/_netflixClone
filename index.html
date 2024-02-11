@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Triple C.">
+    <meta name="description" content="Leanrable task 'Netflix Clone'">
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/faq.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6ab2133fe6.js" crossorigin="anonymous"></script>
+    <title class="text-rose-600">Netflix</title>
+</head>
+
+<body class="text-white bg-black">
+    <header class="netflix_bg p-2">
+        <!-- Navbar -->
+        <nav class="flex justify-between px-8">
+            <div class="p-2">
+                <a href="./index.html"><img src="./assets/images/Logo.png" alt="netflixLogo" class="w-full"></a>
+            </div>
+
+            <div class="flex hidden justify-between items-center sm:block space-x-2 :space-x-6">
+                <select name="language" id="lang"
+                    class="h-fit bg-transparent text-white border p-0.5 md:p-3 rounded-md">
+                    <option value="1">English</option>
+                    <option value="">Spanish</option>
+                    <option value="">Russian</option>
+                    <option value="">Chinese</option>
+                    <option value="">French</option>
+                </select>
+
+                <a href="./signin.html" class="text-white bg-red-600 py-2 px-2  md:py-3 md:px-6 rounded-md">Sign in</a>
+            </div>
+        </nav>
+
+        <!-- Header Content -->
+        <div class="text-center align-middle flex flex-col justify-center space-y-6 h-5/6 ">
+            <div class="space-y-2.5">
+                <h1 class="text-3xl md:text-5xl font-bold">Unlimited movies, TV <br> shows and more.</h1>
+                <p class="text-xl">Watch anywhere. Cancel anytime.</p>
+            </div>
+
+            <div class="space-y-3 font-normal">
+                <p class="text-sm md:text-base">Ready to watch? Enter your email to create or restart your membership.
+                </p>
+                <form action="./userProfile.html" class="align-middle flex justify-center">
+                    <input type="text" name="useremail" id="email" placeholder="Enter address"
+                        class="w-3/5 px-2 md:w-4/12  md:px-3 md:py-4 mb">
+                    <a href="#" class="text-white bg-red-700 px-3 py-3 md:py-4 md:px-8 h-full text-lg ">Get
+                        started <img src="assets/images/Frame.png " alt="arrow" class="inline w-"></a>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <hr class="border-stone-500 border-2">
+
+    <!-- Main Content -->
+    <main>
+        <!-- Categories Section -->
+        <section class="w-4/5 mx-auto bg-black my-10 py-10 md:flex md:items-center justify-center ">
+            <div class="md:w-5/12 md:text-left md:px-12 space-y-4 text-center">
+                <h2 class="font-bold md:text-4xl ">Enjoy on your TV.</h2>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            </div>
+
+            <div class="w-4/ md:w-/5 p-2 relative mx-auto">
+                <img src="/assets/images/Rectangle.png" alt="tv" class="w-full bg-transparent">
+                <img src="./assets/images/Netflix India – Watch TV Shows Online, Watch Movies Online_2 1.png"
+                    alt="tvScreen"
+                    class="absolute w-4/5 top-14 left-7 md:top-20 md:pt-2.5 md:left-16 px-2.5 md:w-9/12 ps-3.5">
+            </div>
+        </section>
+
+        <hr class="border-stone-500 border-2">
+
+        <section class="w-4/5 mx-auto space-y-4 bg-black my-10 py-10 md:flex md:items-center justify-center ">
+            <div class="w-4/ p-2 relative mx-auto flex justify-center">
+                <img src="/assets/images/Rectangle (3).png" alt="phone" class="w-full bg-transparent">
+
+                <div
+                    class=" bg-black mx-auto flex justify-between items-center border border-stone-500 rounded-xl p-2    absolute bottom-6 md:bottom-8 md:w-9/12">
+                    <div class="flex items-center space-x-6 ">
+                        <div class="movieImage">
+                            <img src="/assets/images/Rectangle (2).png" alt="movieImage">
+                        </div>
+                        <div>
+                            <h3>Stranger Things</h3>
+                            <p class="text-blue-500">Downloading . . .</p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <img src="/assets/images/download-icon 1.png" alt="download-icon" class="w-full">
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-5/12 md:text-left md:pe-10  space-y-4 text-center">
+                <h2 class="font-bold md:text-4xl ">Download your shows to watch offline.</h2>
+                <p>Save your favorites easily and always have something to watch.
+                </p>
+            </div>
+        </section>
+
+        <hr class="border-stone-500 border-2">
+
+        <section class="w-4/5 mx-auto space-y-4 bg-black my-10 py-10 md:flex md:items-center justify-center ">
+            <div class="md:w-5/12 md:text-left md:ps-16  space-y-4 text-center">
+                <h2 class="font-bold md:text-4xl ">Watch everywhere.</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.
+                </p>
+            </div>
+
+            <div class="w-4/ p-2 relative mx-auto flex justify-center">
+                <img src="/assets/images/Rectangle (4).png" alt="devices" class="w-full bg-transparent ">
+                <!-- <img src="/assets/images/Netflix India – Watch TV Shows Online, Watch Movies Online 1.png" alt="movieImage_2" class="absolute movieImage_2 md:top-14"> -->
+            </div>
+        </section>
+
+        <hr class="border-stone-500 border-2">
+
+        <section class="w-4/5 mx-auto space-y-4 bg-black my-10 py-10 md:flex md:items-center justify-center px-">
+            <div class="w-4/ p-2 relative mx-auto flex justify-center">
+                <img src="/assets/images/Rectangle (5).png" alt="devices" class="w-full bg-transparent ">
+                <!-- <img src="/assets/images/Netflix India – Watch TV Shows Online, Watch Movies Online 1.png" alt="movieImage_2" class="absolute movieImage_2 md:top-14"> -->
+            </div>
+
+            <div class="md:w-5/12 md:text-left md:pe-1  space-y-4 text-center">
+                <h2 class="font-bold md:text-4xl ">Create profiles for kids.</h2>
+                <p> Send kids on adventures with their favorite characters in a space made just for them—free with your
+                    membership.
+                </p>
+            </div>
+        </section>
+
+        <hr class="border-stone-500 border-2">
+
+        <!-- FAQ Section -->
+        <section class="faq-content space-y-16 py-10 my-10">
+            <h1 class="faq-header text-center font-bold">Frequently Asked Questions</h1>
+
+            <div class="space-y-4">
+                <div class="faq-question">
+                    <input id="q1" type="checkbox" class="panel">
+                    <div class="flex flex-row-reverse">
+                        <label for="q1" class="panel-title">What is Netflix?</label>
+                        <div class="plus">+</div>
+                    </div>
+                    <div class="panel-content">42</div>
+                </div>
+
+                <div class="faq-question">
+                    <input id="q2" type="checkbox" class="panel">
+                    <div class="flex flex-row-reverse">
+                        <label for="q2" class="panel-title">How much does Netflix cost?</label>
+                        <div class="plus">+</div>
+                    </div>
+                    <div class="panel-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum modi
+                        explicabo perferendis.</div>
+                </div>
+
+                <div class="faq-question">
+                    <input id="q3" type="checkbox" class="panel">
+
+                    <div class="flex flex-row-reverse">
+                        <label for="q3" class="panel-title">Where can I watch?</label>
+                        <div class="plus">+</div>
+                    </div>
+                    <div class="panel-content bg-transparent">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Et laborum modi explicabo perferendis.
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <input id="q3" type="checkbox" class="panel">
+
+                    <div class="flex flex-row-reverse">
+                        <label for="q3" class="panel-title">How do I cancel?</label>
+                        <div class="plus">+</div>
+                    </div>
+                    <div class="panel-content bg-transparent">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Et laborum modi explicabo perferendis.
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <input id="q3" type="checkbox" class="panel">
+
+                    <div class="flex flex-row-reverse">
+                        <label for="q3" class="panel-title">What can I watch on Netflix?</label>
+                        <div class="plus">+</div>
+                    </div>
+                    <div class="panel-content bg-transparent">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Et laborum modi explicabo perferendis.
+                    </div>
+                </div>
+
+                <div class="faq-question">
+                    <input id="q3" type="checkbox" class="panel">
+
+                    <div class="flex flex-row-reverse">
+                        <label for="q3" class="panel-title">Is Netflix good for kids?</label>
+                        <div class="plus">+</div>
+                    </div>
+                    <div class="panel-content bg-transparent">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Et laborum modi explicabo perferendis.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="space-y-3 font-normal ">
+                <p class="text-sm md:text-base text-center">Ready to watch? Enter your email to create or restart your
+                    membership.
+                </p>
+                <form action="./userProfile.html" class="align-middle flex justify-center">
+                    <input type="text" name="useremail" id="email" placeholder="Enter address"
+                        class="w-3/5 px-2 md:w-4/12  md:px-3 md:py-4 mb">
+                    <a href="#" class="text-white bg-red-700 px-3 py-3 md:py-4 md:px-8 h-full text-lg ">Get
+                        started <img src="assets/images/Frame.png " alt="arrow" class="inline w-"></a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <hr class="border-stone-500 border-2">
+
+    <!-- Footer -->
+    <footer class="container md:w-9/12 mx-auto mt-10 pt-10 pb-10 px-6 text-[#757575] space-y-8">
+        <h4 class="text-center md:text-start">Questions? Call 1-844-505-2993 </h4>
+
+        <section class="flex flex-col space-y-6 items-center text-center md:text-start md:justify-between md:flex-row">
+            <div class="flex flex-col space-y-3.5">
+                <h4>FAQ</h4>
+                <a href="#">Investor Relations</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+
+            <div class="flex flex-col space-y-3.5">
+                <h4>Help Center</h4>
+                <a href="#">Jobs</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+                <!-- <a href="#"></a> -->
+            </div>
+
+            <div class="flex flex-col space-y-3.5">
+                <h4>Accounts</h4>
+                <a href="#">Redeem Gift Cards</a>
+                <a href="#">Pricavy</a>
+                <a href="#">Speed Test</a>
+                <!-- <a href="#"></a> -->
+            </div>
+
+            <div class="flex flex-col space-y-3.5">
+                <h4>Media Center</h4>
+                <a href="#">Buy Gift Cards</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+                <!-- <a href="#"></a> -->
+            </div>
+        </section>
+
+        <div class="flex justify-center md:justify-start">
+            <select name="language" id="lang" class="h-fit bg-black text--[#757575] border p-0.5 text-center  md:w-1/6 md:py-2 md:ps-1 text-lg rounded-md">  
+                <option value="">English</option>
+                <option value="">Spanish</option>
+                <option value="">Russian</option>
+                <option value="">Chinese</option>
+                <option value="">French</option>
+            </select>
+        </div>
+
+        <p class="text-center md:text-left">Netflix India</p>
+    </footer>
+</body>
+
+</html>
